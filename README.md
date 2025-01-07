@@ -32,7 +32,7 @@
     - AdaBoost.py：通过sklearn实现，效果并不好
     - DecisionTree.py：通过sklearn实现，效果不好
     - KNN.py：通过sklearn实现，且手动编程实现。但sklearn支持了kd-tree和ball-tree，因此执行效率会高很多。
-    - Linear_SVM.py：调适未通过，目前无法使用
+    - Linear_SVM.py：调试未通过，目前无法使用
     - Logistic_Regression.py：通过sklearn实现，且手动编程实现。但sklearn的实现效率高很多，而且此处我并非使用多分类而是通过重复训练label个数个2分类器实现。
     - NaiveBayes.py：通过sklearn实现，且手动编程实现。
         - sklearn支持了Gaussian，Bernoulli，Multinomial，Categorical，Complement。其中在测试集上表现最好的是Multinomial。
@@ -41,25 +41,13 @@
 # 使用步骤
 
 ## Python支持库
-
-- numpy
-- sklearn（scikit-learn）
-- random
-- math
-- os
-- csv
-- collections
-- cvxopt
+见Code/requirement.txt 文件
 
 ## 运行指令
 
 ```bash
-cd my_venu/bin
-source activate
-cd ../../Code
-python main.py
-
-deactivate
+pip install -r ./Code/requirements.txt
+python ./Code/main.py
 ```
 
 ## 方法选择

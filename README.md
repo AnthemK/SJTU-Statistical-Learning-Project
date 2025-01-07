@@ -54,8 +54,12 @@
 ## 运行指令
 
 ```bash
-cd Code
+cd my_venu/bin
+source activate
+cd ../../Code
 python main.py
+
+deactivate
 ```
 
 ## 方法选择
